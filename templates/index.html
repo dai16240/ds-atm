@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>ds-atm rest api</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/skeleton.css')}}">
+
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="" style="margin-top: 10%;">
+        <h2>Bank-ATM REST API</h2>
+        <h5 style="text-align: right;">Distributed Systems</h5>
+        <p>How to use the api:</p>
+
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Method</th>
+              <th>Endpoint</th>
+              <th>Params</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>POST</td>
+              <td>/register</td>
+              <td>name, password</td>
+              <td>Register a new user.</td>
+            </tr>
+            <tr>
+              <td>POST</td>
+              <td>/login</td>
+              <td>name, password</td>
+              <td>User authentication.</td>
+            </tr>
+            <tr>
+              <td>PUT</td>
+              <td>/withdraw</td>
+              <td>token, amount</td>
+              <td>Withdraw amount from user's account.</td>
+            </tr>
+            <tr>
+              <td>PUT</td>
+              <td>/deposit</td>
+              <td>token, amount</td>
+              <td>Add amount into user's account.</td>
+            </tr>
+            <tr>
+              <td>GET</td>
+              <td>/balance</td>
+              <td>token</td>
+              <td>Get user's balance.</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
