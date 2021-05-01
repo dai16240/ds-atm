@@ -8,7 +8,7 @@ Built with Flask/Python and Heroku Postgres.
 Check it out [here](https://ds-atm.herokuapp.com).
 
 ## Usage
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)
 
 ## Installation
 
